@@ -8,6 +8,11 @@ import reportWebVitals from "./reportWebVitals";
 
 const initialState = {
   actor: "",
+  profile_path: "",
+  name: "",
+  gender: "",
+  popularity: "",
+  know_for: [],
   loading: false,
   error: null,
 };
