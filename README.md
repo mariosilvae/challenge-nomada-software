@@ -6,10 +6,15 @@ Con esta interfaz podrás subir una foto de un actor y recibir su nombre y algun
 ## Instalación
 
 Clona este repositorio en tu ordenador local.
+
 Corre el comando:
+
 `npm install`
-Una vez instalado todos los paquetes corre la aplicación
+
+Una vez instalado todos los paquetes corre la aplicación:
+
 `npm run start`
+
 Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación en tu navegador.
 
 ## API
