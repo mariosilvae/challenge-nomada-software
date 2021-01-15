@@ -11,3 +11,7 @@ Corre el comando:
 Una vez instalado todos los paquetes corre la aplicación
 `npm run start`
 Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación en tu navegador.
+
+## API
+
+Los datos de actores y peliculas fueron obtenidos de [The Movie DB](https://developers.themoviedb.org/3/search/search-people)

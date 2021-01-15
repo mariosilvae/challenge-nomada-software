@@ -88,7 +88,8 @@ const Actor = (props) => {
           <p align="center">Popularidad: {datos.popularity.toFixed(2)}</p>
         </div>
       </div>
-      <Divider>
+
+      <Divider className="movies">
         <h2>Peliculas</h2>
       </Divider>
 

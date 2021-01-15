@@ -36,7 +36,9 @@ body {
 }
 
 .actor_image {
-  border-radius: 50%;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 4px 10px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 4px 10px 3px rgba(0, 0, 0, 0.5);
 }
 .image_container {
   width: 40%;
@@ -51,6 +53,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.actor_description p {
+  font-size: 20px;
+  margin: 5px;
 }
 
 @media only screen and (max-width: 768px) {
