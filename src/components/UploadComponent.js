@@ -14,19 +14,26 @@ const UploadComponent = (props) => {
   const data = {
     name: "file",
     multiple: false,
-    accept: ".png, .jpg",
+    accept: ".png, .jpg, .JPG, .PNG",
     action: "https://whois.nomada.cloud/upload",
     headers: {
       nomada: "ODFjNjQ1YTQtOGE4Ny00ZDI5LWI1ZTctMmE4Nzg4YjAzODAx",
     },
+    beforeUpload: (file) => {
+      if (!file.type === "image/jpeg" || !file.type === "image/png") {
+        message.error("Solo se permiten archivos .jpg o .png");
+      }
+    },
     onChange(info) {
       const { status, response } = info.file;
       if (status === "done") {
-        message.success(`${info.file.name} file uploaded successfully.`);
+        message.success(`${info.file.name} Archivo cargado correctamente.`);
         handleGetActor(response.actorName);
-        props.history.push("/actor")
+        props.history.push("/actor");
       } else if (status === "error") {
-        message.error(`${info.file.name} file upload failed.`);
+        message.error(
+          `${info.file.name} Error al subir archivo, intente nuevamente.`
+        );
       }
     },
   };
