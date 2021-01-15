@@ -4,6 +4,8 @@ import { getActor } from "../actions";
 import { Upload, message } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 
+import "../routes/App.css";
+
 const UploadComponent = (props) => {
   const { Dragger } = Upload;
 
@@ -39,9 +41,9 @@ const UploadComponent = (props) => {
   };
 
   return (
-    <div>
+    <div align="center" className="main_container">
       <h1 align="center">¿Quién es ese actor?</h1>
-      <Dragger {...data}>
+      <Dragger {...data} style={{ width: 800 }}>
         <p className="ant-upload-drag-icon">
           <InboxOutlined />
         </p>
