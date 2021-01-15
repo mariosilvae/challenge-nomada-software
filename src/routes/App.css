@@ -1,1 +1,66 @@
 @import "~antd/dist/antd.css";
+
+body {
+  margin: 0;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ant-card-head {
+  color: white;
+  border-radius: 20px 20px 5px 5px;
+  background-color: #3f51b5;
+}
+
+.ant-card-extra {
+  color: white;
+}
+
+.main_container {
+  margin-top: 40px;
+}
+
+.main_container h1 {
+  margin-bottom: 20px;
+}
+
+.actor_result {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.actor_image {
+  border-radius: 50%;
+}
+.image_container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actor_description {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .actor_result {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .actor_result {
+    width: 100%;
+  }
+}
