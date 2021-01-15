@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { Image, Typography, Row, Divider, Spin, PageHeader } from "antd";
-import { data } from "../actions";
 import Movies from "./Movies";
 import NotFound from "./NotFound";
 
@@ -64,7 +63,10 @@ const ActorComponent = (props) => {
 
   return (
     <>
-      <PageHeader onBack={() => null} title="Busca otro artista" />
+      <PageHeader
+        onBack={() => props.history.push("/")}
+        title="Busca otro artista"
+      />
       <h1 align="center">Tu artista es...</h1>
       <div align="center">
         <Image
@@ -99,8 +101,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapDispatchToProps = {
-  data,
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(ActorComponent);
+export default connect(mapStateToProps, null)(ActorComponent);
