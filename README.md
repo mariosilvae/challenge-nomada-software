@@ -1,6 +1,7 @@
 # Challenge Nomada Software House
 
 ¿No sabes como se llama un actor y solo cuentas con una foto de el?
+
 Con esta interfaz podrás subir una foto de un actor y recibir su nombre y algunas de las películas en las que ha trabajado.
 
 ## Instalación
